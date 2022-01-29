@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.anthony.saml2-okta' is invalid and this project uses 'com.anthony.saml2okta' instead.
+* The original package name 'com.anthony.saml2-okta' is invalid and this project uses 'com.anthony.leadentry' instead.
 
 # Getting Started
 

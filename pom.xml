@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.anthony</groupId>
-    <artifactId>saml2-okta</artifactId>
+    <artifactId>aa-lead-entry</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>saml2-okta</name>
     <description>Demo project for Spring Boot Security using SAML2 and Okta IdT</description>
