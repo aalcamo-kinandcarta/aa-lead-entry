@@ -9,14 +9,21 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.anthony</groupId>
-    <artifactId>aa-lead-entry</artifactId>
+    <artifactId>lead-poc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>saml2-okta</name>
     <description>Demo project for Spring Boot Security using SAML2 and Okta IdT</description>
     <properties>
         <java.version>11</java.version>
+        <spring-cloud-gcp.version>3.1.0</spring-cloud-gcp.version>
+        <spring-cloud.version>2021.0.0</spring-cloud.version>
     </properties>
     <dependencies>
+
+<!--        <dependency>-->
+<!--            <groupId>com.google.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-gcp-starter-pubsub</artifactId>-->
+<!--        </dependency>-->
 
         <!-- web -->
         <dependency>

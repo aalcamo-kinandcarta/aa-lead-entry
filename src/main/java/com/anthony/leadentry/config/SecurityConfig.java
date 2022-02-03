@@ -15,6 +15,22 @@ import static org.springframework.security.config.Customizer.withDefaults;
  * we are configuring web-based security for http requests. In this example, we are simply
  * authorizing any user to issue any request if the user is authenticated by a SAML 2.0
  * Service Provider.via SAML.
+ *
+ * since we are extending the WebSecurityConfigurerAdapter when we include the
+ * spring-security-saml2-service-privider the configure below is basically the
+ * same as the defaults.
+ *
+ * we override as we are sure to perfomr som role-based authorization in here as well.
+ *
+ * Spring boot also creates a RelyingPartyRegistrationRepository bean which represents the
+ * asserting party and relying party metadata (e.g. the sso endpoint location the relying
+ * party should use when requesting authentication). unsure if this will need to be
+ * overridden as this application will not be multitenant (initially).
+ *
+ * we have configured the identity provider information in our application.yml, but could also
+ * have done it here via overriding relyingPartyRegistration(). Note: the registrationId is an
+ * arbitrary value to differentiate between IdP registrations (e.g. okta, google).
+ *
  */
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 

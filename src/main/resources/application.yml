@@ -1,7 +1,7 @@
 server:
    port: 8443
    servlet:
-      context-path: /spring-saml
+      context-path: /lead-poc
    ssl:
       enabled: true
       key-alias: spring
@@ -14,10 +14,17 @@ spring:
             registration:
                okta:
                   identityprovider:
-                     entity-id: http://www.okta.com/exk3ngtw0bYRXEZ3z5d7
+                     entity-id: http://www.okta.com/exk3s02vqic9Uv16G5d7
                      verification.credentials:
                         - certificate-location: "classpath:saml/okta.cert"
-                     singlesignon.url: https://dev-71366083.okta.com/app/dev-71366083_springsaml_1/exk3ngtw0bYRXEZ3z5d7/sso/saml
+                     singlesignon.url: https://dev-71366083.okta.com/app/dev-71366083_leadpoc_3/exk3s02vqic9Uv16G5d7/sso/saml
+                     singlesignon.sign-request: false
+               google:
+                  identityprovider:
+                     entity-id: https://accounts.google.com/o/saml2?idpid=C02j6jebf
+                     verification.credentials:
+                        - certificate-location: "classpath:saml/google.cert"
+                     singlesignon.url: https://accounts.google.com/o/saml2/idp?idpid=C02j6jebf
                      singlesignon.sign-request: false
    datasource:
       url: jdbc:postgresql://localhost:5432/ae20
